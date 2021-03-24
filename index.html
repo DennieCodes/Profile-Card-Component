@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Profile card component</title>
 
-  <!-- git remote add origin https://github.com/Oculareo/Profile-Card-Component.git
-  git branch -M main
-  git push -u origin main -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="container-bg-top" src="images/bg-pattern-top.svg" />
+      <img class="container-bg-bottom" src="images/bg-pattern-bottom.svg" />
 
+      <article class="Card">
+        <img src="images/bg-pattern-card.svg" />
+        <header class="Card-header">
+          <h2 class="Card-title">
+            Victor Crest <span class="Card-title-span">26</span>
+          </h2>
+          <h3 class="Card-subtitle">London</h3>
+          <img
+            class="Card-image"
+            src="./images/image-victor.jpg"
+            alt="A profile picture of Victor Crest"
+          />
+        </header>
 
-  <div class="container">
-    <img class="container-bg-top" src="images/bg-pattern-top.svg" />
-    <img class="container-bg-bottom" src="images/bg-pattern-bottom.svg" />
-    
-    <article class="Card">
-      <img src="images/bg-pattern-card.svg" />
-      <header class="Card-header">
-        <h2 class="Card-title">Victor Crest <span class="Card-title-span">26</span></h2>
-        <h3 class="Card-subtitle">London</h3>
-        <img class="Card-image" src="./images/image-victor.jpg" alt="A profile picture of Victor Crest">
-      </header>
+        <section class="Card-content">
+          <div class="Card-content-section">
+            <h4>80K</h4>
+            <p>Followers</p>
+          </div>
 
-      <section class="Card-content">
-        <div class="Card-content-section">
-          <h4>80K</h4>
-          <p>Followers</p>
-        </div>
-      
-        <div class="Card-content-section">
-          <h4>803K</h4>
-          <p>Likes</p>
-        </div>
-        
-        <div class="Card-content-section">
-          <h4>1.4K</h4>
-          <p>Photos</p>
-        </div>
-      </section>
-    </article>
-    
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Oculareo">Oculareo</a>.
-  </div>
-</body>
+          <div class="Card-content-section">
+            <h4>803K</h4>
+            <p>Likes</p>
+          </div>
+
+          <div class="Card-content-section">
+            <h4>1.4K</h4>
+            <p>Photos</p>
+          </div>
+        </section>
+      </article>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Oculareo">Oculareo</a>.
+    </div>
+  </body>
 </html>
